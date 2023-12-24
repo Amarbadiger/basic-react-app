@@ -33,7 +33,12 @@ function Pro_list() {
       <div className="list">
         {container.map((item) => {
           return (
-            <Product course={item.course} price={item.price} url={item.url} />
+            <Product
+              key={item.id}
+              course={item.course}
+              price={item.price}
+              url={item.url}
+            />
           );
         })}
         {/* // i have hard coded here
